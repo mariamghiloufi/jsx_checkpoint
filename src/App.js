@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import gomycode from'./imageInSrc.png';
+
+import maVideo from './rethinking-education-le-modèle-gomycode-présenté-par-le-ceo-yahya-bouhlel.mp4';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     <div style={{border:"solid 1px black" , maxWidth:"100vw"}}>
+
+<h1 className="title red">Mariam Ghiloufi</h1>
+
+<br/>
+<img src={gomycode} alt="gomycode"/>
+
+<br/>
+<img src="/imageInPublic.jpg" alt="imageInPublic"/>
+
+</div>
+     
+<video width="320" height="240"  controls >
+          <source src={maVideo} type="video/mp4"/>
+         </video>
+  
     </div>
   );
 }
